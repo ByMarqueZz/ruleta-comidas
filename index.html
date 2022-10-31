@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function girarRuleta(){
+            // mover una imagen hacia la derecha
+            document.getElementsByClassName("imagenes").style.transform = "rotate(360deg)";
+        }
+    </script>
+    <style>
+        #ruleta{
+            width: 100%;
+            height: 200px;
+            border: 1px solid red;
+            transition: 2s;
+        }
+        .imagenes{
+            width: 100px;
+            height: 100px;
+            margin: 6%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>La ruleta de comidas chetadas</h1>
+        <div id="ruleta">
+            <div id="imagenesDiv">
+                <img src="./img/patatas.jpeg" alt="patatas" class="imagenes">
+            </div>
+        </div>
+        <button onclick="girarRuleta()">Girar</button>
+    </div>
+
+
+</body>
+</html>
