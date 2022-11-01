@@ -1,0 +1,12 @@
+create table comidas (
+	id_comidas int NOT NULL AUTO_INCREMENT,
+    nombre varchar(50),
+    foto varchar(100),
+    video varchar(100),
+    primary key(id_comidas)
+);
+
+INSERT INTO comidas(nombre, foto, video) VALUES ('patatas chetadas', 'patatas.jpeg', '-')
+
+$comidas = obtenerComidas($con);
+echo "<img src='./img/" . $comidas[0][2] . "' alt=''>";

@@ -1,11 +1,28 @@
 body {
-    background-color: red;
+    background-color: grey;
+    margin: 1%;
 }
 
 #header {
-
+    border: 1px solid blue;
+    margin-bottom: 10px;
 }
 
 #ruletaDiv {
+    min-height: 100px;
+    margin-bottom: 10px;
+}
 
+#ruletaImg  {
+    min-height: 115px;
+    margin-top: 10px;
+    border: 1px solid red;
+}
+#buttonChetarte {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#resultado {
+    min-height: 700px;
 }
