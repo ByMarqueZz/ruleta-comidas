@@ -10,8 +10,8 @@
     <?php
         include 'php/db-connect.php';
         $comidas = obtenerComida($con);
-        
     ?>
+    <script src="./js/girar.js"></script>
 </head>
 <body>
     <div id="header" class="container-fluid text-bg-color text-center">
@@ -20,14 +20,19 @@
     <div id="ruletaDiv" class="border text-center">
         <div id="ruletaImg">
             <?php
-                echo "<img src='./img/" . $comidas[0][2] . "' alt='patata'>";
+                echo "<ul class='lista'>";
+                for($i=0;$i<100;$i++){
+                    echo "<li><img src='./media/img/" . $comidas[0][2] . "' alt='comida' class='imagenes'></li>";
+                }
+                echo "</ul>";
+                // echo "<img src='./media/img/" . $comidas[0][2] . "' alt='patata' class='imagenes'>";
             ?>
         </div>
         <button id="buttonChetarte">Chetarte??</button>
     </div>
     <div id="resultado" class="border text-center">
         <?php
-            echo "<video controls src='./video/".$comidas[0][3]."' autoplay muted></video>"
+            // echo "<video controls src='./media/video/".$comidas[0][3]."' autoplay muted></video>"
         ?>
     </div>
 </body>

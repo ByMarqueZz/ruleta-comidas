@@ -18,6 +18,15 @@ body {
     margin-top: 10px;
     border: 1px solid red;
 }
+
+.lista {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    overflow: hidden;
+    transition: left 1s;
+}
+
 #buttonChetarte {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -25,4 +34,10 @@ body {
 
 #resultado {
     min-height: 700px;
+}
+
+.imagenes {
+    width: 170px;
+    height: 115px;
+    border: 1px solid black;
 }
