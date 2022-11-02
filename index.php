@@ -29,7 +29,6 @@
                     echo "</li>";
                 }
                 echo "</ul>";
-                // echo "<img src='./media/img/" . $comidas[0][2] . "' alt='patata' class='imagenes'>";
             ?>
         </div>
         <button id="buttonChetarte">Chetarse??</button>
