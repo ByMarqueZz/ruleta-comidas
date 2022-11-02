@@ -22,7 +22,11 @@
             <?php
                 echo "<ul class='lista'>";
                 for($i=0;$i<100;$i++){
-                    echo "<li><img src='./media/img/" . $comidas[0][2] . "' alt='comida' class='imagenes'></li>";
+                    $num = rand(0, count($comidas)-1);
+                    echo "<li>";
+                    echo "<img src='./media/img/" . $comidas[$num][2] . "' alt='comida' class='imagenes'>";
+                    echo "<p class='nombreComida'>" . $comidas[$num][1] . "</p>";
+                    echo "</li>";
                 }
                 echo "</ul>";
                 // echo "<img src='./media/img/" . $comidas[0][2] . "' alt='patata' class='imagenes'>";

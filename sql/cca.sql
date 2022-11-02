@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-11-2022 a las 20:30:19
+-- Tiempo de generación: 02-11-2022 a las 17:28:21
 -- Versión del servidor: 10.4.22-MariaDB
 -- Versión de PHP: 8.1.2
 
@@ -39,7 +39,18 @@ CREATE TABLE `comidas` (
 --
 
 INSERT INTO `comidas` (`id_comidas`, `nombre`, `foto`, `video`) VALUES
-(1, 'patatas chetadas', 'patatas.jpeg', '-');
+(1, 'patatas chetadas', 'patatas.jpeg', 'patata.mp4'),
+(2, 'kebab chetado', '-', '-'),
+(3, 'macarrones carbonara chetados', '-', '-'),
+(4, 'macarrones carne picada chetados', '-', '-'),
+(5, 'pizza chetada', '-', '-'),
+(6, 'burritos chetados', '-', '-'),
+(7, 'huevo revuelto chetado', '-', '-'),
+(8, 'tortilla chetada', '-', '-'),
+(9, 'nuggets chetados', '-', '-'),
+(10, 'empanadillas chetadas', '-', '-'),
+(11, 'huevo frito chetado', '-', '-'),
+(12, 'salchichas chetadas', '-', '-');
 
 --
 -- Índices para tablas volcadas
@@ -59,7 +70,7 @@ ALTER TABLE `comidas`
 -- AUTO_INCREMENT de la tabla `comidas`
 --
 ALTER TABLE `comidas`
-  MODIFY `id_comidas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_comidas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

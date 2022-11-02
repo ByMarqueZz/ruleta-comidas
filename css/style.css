@@ -14,17 +14,19 @@ body {
 }
 
 #ruletaImg  {
+    margin-left: 0px;
     min-height: 115px;
     margin-top: 10px;
     border: 1px solid red;
+    transition: left 10s;
 }
 
 .lista {
+    left: 0%;
     display: flex;
     list-style: none;
     padding: 0px;
     overflow: hidden;
-    transition: left 1s;
 }
 
 #buttonChetarte {
@@ -37,7 +39,9 @@ body {
 }
 
 .imagenes {
-    width: 170px;
-    height: 115px;
+    min-width: 170px;
+    min-height: 115px;
+    max-width: 170px;
+    max-height: 115px;
     border: 1px solid black;
 }

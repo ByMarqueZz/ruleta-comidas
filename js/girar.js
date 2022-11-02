@@ -1,6 +1,9 @@
 function moverListaDerecha() {
-    lista = document.getElementById("lista");
-    lista.style.left = "-1000px";
+    // mover la lista de la izquierda a la derecha
+    lista = document.getElementById("ruletaImg");
+    var tamaño = window.getComputedStyle(lista).getPropertyValue("marginLeft");
+    tamaño += -1000;
+    lista.style.marginLeft = `${tamaño}px`;
 }
 
 // una vez que carga la pagina

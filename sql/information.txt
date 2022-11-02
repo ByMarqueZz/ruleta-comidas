@@ -7,6 +7,3 @@ create table comidas (
 );
 
 INSERT INTO comidas(nombre, foto, video) VALUES ('patatas chetadas', 'patatas.jpeg', '-')
-
-$comidas = obtenerComidas($con);
-echo "<img src='./img/" . $comidas[0][2] . "' alt=''>";
