@@ -20,8 +20,8 @@
     <div id="ruletaDiv" class="border text-center">
         <div id="ruletaImg">
             <?php
-                echo "<ul class='lista'>";
-                for($i=0;$i<100;$i++){
+                echo "<ul class='lista' id='lista'>";
+                for($i=0;$i<1000;$i++){
                     $num = rand(0, count($comidas)-1);
                     echo "<li>";
                     echo "<img src='./media/img/" . $comidas[$num][2] . "' alt='comida' class='imagenes'>";
@@ -32,7 +32,7 @@
                 // echo "<img src='./media/img/" . $comidas[0][2] . "' alt='patata' class='imagenes'>";
             ?>
         </div>
-        <button id="buttonChetarte">Chetarte??</button>
+        <button id="buttonChetarte">Chetarse??</button>
     </div>
     <div id="resultado" class="border text-center">
         <?php

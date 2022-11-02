@@ -1,6 +1,7 @@
 body {
     background-color: grey;
     margin: 1%;
+    overflow-x: hidden;
 }
 
 #header {
@@ -18,15 +19,14 @@ body {
     min-height: 115px;
     margin-top: 10px;
     border: 1px solid red;
-    transition: left 10s;
 }
 
 .lista {
-    left: 0%;
+    position: relative;
+    left: 0px;
     display: flex;
     list-style: none;
     padding: 0px;
-    overflow: hidden;
 }
 
 #buttonChetarte {
