@@ -30,12 +30,13 @@
                 }
                 echo "</ul>";
             ?>
+            <img src="./media/img/flecha.png" alt="flecha" id="flechaImg">
         </div>
         <button id="buttonChetarte">Chetarse??</button>
     </div>
-    <div id="resultado" class="border text-center">
+    <div id="resultado" class="text-center">
         <?php
-            // echo "<video controls src='./media/video/".$comidas[0][3]."' autoplay muted></video>"
+            echo "<video controls src='./media/video/".$comidas[0][3]."' autoplay muted></video>"
         ?>
     </div>
 </body>
