@@ -34,7 +34,7 @@
         </div>
         <button id="buttonChetarte">Chetarse??</button>
     </div>
-    <div id="resultado" class="text-center">
+    <div id="resultado" class="text-center ">
         <?php
             echo "<video controls src='./media/video/".$comidas[0][3]."' autoplay muted></video>"
         ?>
