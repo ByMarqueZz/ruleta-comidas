@@ -1,10 +1,9 @@
 body {
-    background-color: grey;
     margin: 1%;
     overflow-x: hidden;
     background-image: url('../media/img/FondoPag.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
 }
 
 #header {
@@ -41,7 +40,30 @@ body {
 }
 
 #resultado {
+    overflow: auto;
+    overflow-x: hidden;
     min-height: 320px;
+}
+
+#resultadoDiv {
+    display: none;
+    min-height: 140px;
+    height: 220px;
+}
+
+#lista2 {
+    position: relative;
+    left: 0px;
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+
+#resultadoDiv ul li video{
+    min-width: 170px;
+    min-height: 115px;
+    max-width: 170px;
+    max-height: 115px;
 }
 
 .imagenes {
@@ -57,4 +79,40 @@ body {
     text-align: center;
     height: 60px;
     margin-top: -40px;
+}
+
+/* media querys */
+@media screen and (max-width: 600px) {
+    body {
+        background-size: auto;
+    }
+   #superIzq {
+        margin-top: -1%;
+        max-width: 31%;
+        background-image: url('../media/img/prueba\ fondo\ div.png');
+   } 
+   #superDer {
+        max-width: 31%;
+        background-image: url('../media/img/prueba\ fondo\ div2.png');
+   }
+}
+/* superposicion de div */
+#superIzq {
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    width: 43%;
+    height: 20%;
+    background-image: url('../media/img/prueba\ fondo\ div\ pc.png');
+    background-repeat: no-repeat;
+    z-index: 9;
+}
+#superDer {
+    /* display: none; */
+    position: absolute;
+    right: 0;
+    width: 43%;
+    height: 20%;
+    background-image: url('../media/img/prueba\ fondo\ div\ pc2.png');
+    z-index: 9;
 }

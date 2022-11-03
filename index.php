@@ -20,9 +20,11 @@
     <div id="ruletaDiv" class="border text-center">
         <div id="ruletaImg">
             <?php
+                $orden = array();
                 echo "<ul class='lista' id='lista'>";
-                for($i=0;$i<1000;$i++){
+                for($i=0;$i<100;$i++){
                     $num = rand(0, count($comidas)-1);
+                    array_push($orden, $num);
                     echo "<li>";
                     echo "<img src='./media/img/" . $comidas[$num][2] . "' alt='comida' class='imagenes'>";
                     echo "<p class='nombreComida'>" . $comidas[$num][1] . "</p>";
@@ -35,9 +37,20 @@
         <button id="buttonChetarte">Chetarse??</button>
     </div>
     <div id="resultado" class="text-center ">
-        <?php
-            echo "<video controls src='./media/video/".$comidas[0][3]."' autoplay muted></video>"
-        ?>
+        <!-- div para superponer -->
+        <div id="superIzq"></div>
+        <div id="superDer"></div>
+        <div id="resultadoDiv">
+            <?php
+                echo "<ul class='lista' id='lista2'>";
+                foreach($orden as $num){
+                    echo "<li>";
+                    echo "<video controls src='./media/video/" . $comidas[$num][3] . "'></video>";
+                    echo "</li>";
+                }
+                echo "</ul>";
+            ?>
+        </div>
     </div>
 </body>
 </html>
