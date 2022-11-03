@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 02-11-2022 a las 17:28:21
--- Versión del servidor: 10.4.22-MariaDB
--- Versión de PHP: 8.1.2
+-- Tiempo de generación: 03-11-2022 a las 10:52:15
+-- Versión del servidor: 10.4.25-MariaDB
+-- Versión de PHP: 7.4.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,7 +40,7 @@ CREATE TABLE `comidas` (
 
 INSERT INTO `comidas` (`id_comidas`, `nombre`, `foto`, `video`) VALUES
 (1, 'patatas chetadas', 'patatas.jpeg', 'patata.mp4'),
-(2, 'kebab chetado', '-', '-'),
+(2, 'kebab chetado', 'kebab.png', 'kebab.mp4'),
 (3, 'macarrones carbonara chetados', '-', '-'),
 (4, 'macarrones carne picada chetados', '-', '-'),
 (5, 'pizza chetada', '-', '-'),
