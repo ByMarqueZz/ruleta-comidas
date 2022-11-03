@@ -11,7 +11,4 @@
         $row = mysqli_fetch_all($result);
         return $row;
     }
-    function numeroExacto($num) {
-        
-    }
 ?>
