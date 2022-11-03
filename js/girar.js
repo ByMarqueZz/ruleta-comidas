@@ -6,7 +6,7 @@ function moverListaDerecha() {
     boton = document.getElementById("buttonChetarte");
     divListaMostrar = document.getElementById("resultadoDiv");
     // Si ya está girada se resetea
-    if (parseInt(lista.style.left) < '-4000') {
+    if (parseInt(lista.style.left) < '-1000') {
         boton.value= "Chetarse??";
         divListaMostrar.style.display = "none";
         listaMostrar.style.transition = "left 0s"
@@ -18,7 +18,7 @@ function moverListaDerecha() {
         // Si no está girada se gira
         boton.disabled = true;
         boton.value= "Chetandose...";
-        var aleatorio = Math.floor(Math.random() * (10000 - 4000)) + 4000;
+        var aleatorio = Math.floor(Math.random() * (20000 - 3000)) + 3000;
         lista.style.transition = "left 10s"
         lista.style.left = `${-aleatorio}px`;
         listaMostrar.style.transition = "left 10s"

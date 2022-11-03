@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fonts/Lobster/Lobster-Regular.ttf');
+}
+
 body {
     margin: 1%;
     overflow-x: hidden;
@@ -7,8 +12,14 @@ body {
 }
 
 #header {
-    border: 1px solid blue;
+    border: 1px solid red;
+    background-color: #F74036;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
     margin-bottom: 10px;
+    font-family: 'Lobster';
+    color: white;
+    text-shadow: 4px 4px 1px rgb(0, 0, 0);
+    -webkit-text-stroke: 0.8px black;
 }
 
 #ruletaDiv {
@@ -16,6 +27,9 @@ body {
     margin-bottom: 10px;
     overflow: auto;
     overflow-x: hidden;
+    border: 1px solid orange;
+    background-color: #F78D36;
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
 }
 
 #ruletaImg  {
@@ -23,10 +37,10 @@ body {
     min-height: 140px;
     height: 220px;
     margin-top: 10px;
-    border: 1px solid red;
 }
 
 .lista {
+    font-size: 125%;
     position: relative;
     left: 0px;
     display: flex;
@@ -37,6 +51,7 @@ body {
 #buttonChetarte {
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 #resultado {
@@ -86,33 +101,8 @@ body {
     body {
         background-size: auto;
     }
-   #superIzq {
-        margin-top: -1%;
-        max-width: 31%;
-        background-image: url('../media/img/prueba\ fondo\ div.png');
-   } 
-   #superDer {
-        max-width: 31%;
-        background-image: url('../media/img/prueba\ fondo\ div2.png');
-   }
 }
-/* superposicion de div */
-#superIzq {
-    /* display: none; */
-    position: absolute;
-    left: 0;
-    width: 43%;
-    height: 20%;
-    background-image: url('../media/img/prueba\ fondo\ div\ pc.png');
-    background-repeat: no-repeat;
-    z-index: 9;
-}
-#superDer {
-    /* display: none; */
-    position: absolute;
-    right: 0;
-    width: 43%;
-    height: 20%;
-    background-image: url('../media/img/prueba\ fondo\ div\ pc2.png');
-    z-index: 9;
+
+.nombreComida {
+    font-family: 'Lobster';
 }

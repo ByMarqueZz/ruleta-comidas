@@ -17,12 +17,12 @@
     <div id="header" class="container-fluid text-bg-color text-center">
         <h1>Comidas Chetadas Aleatorias</h1>
     </div>
-    <div id="ruletaDiv" class="border text-center">
+    <div id="ruletaDiv" class="text-center">
         <div id="ruletaImg">
             <?php
                 $orden = array();
                 echo "<ul class='lista' id='lista'>";
-                for($i=0;$i<100;$i++){
+                for($i=0;$i<200;$i++){
                     $num = rand(0, count($comidas)-1);
                     array_push($orden, $num);
                     echo "<li>";
@@ -37,9 +37,6 @@
         <input type="button" id="buttonChetarte" value="Chetarse??">
     </div>
     <div id="resultado" class="text-center ">
-        <!-- div para superponer -->
-        <div id="superIzq"></div>
-        <div id="superDer"></div>
         <div id="resultadoDiv">
             <?php
                 echo "<ul class='lista' id='lista2'>";
