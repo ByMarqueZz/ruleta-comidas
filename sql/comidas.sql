@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 03-11-2022 a las 10:52:15
+-- Tiempo de generación: 03-11-2022 a las 13:11:40
 -- Versión del servidor: 10.4.25-MariaDB
 -- Versión de PHP: 7.4.30
 
@@ -41,16 +41,16 @@ CREATE TABLE `comidas` (
 INSERT INTO `comidas` (`id_comidas`, `nombre`, `foto`, `video`) VALUES
 (1, 'patatas chetadas', 'patatas.jpeg', 'patata.mp4'),
 (2, 'kebab chetado', 'kebab.png', 'kebab.mp4'),
-(3, 'macarrones carbonara chetados', '-', '-'),
-(4, 'macarrones carne picada chetados', '-', '-'),
-(5, 'pizza chetada', '-', '-'),
-(6, 'burritos chetados', '-', '-'),
-(7, 'huevo revuelto chetado', '-', '-'),
-(8, 'tortilla chetada', '-', '-'),
-(9, 'nuggets chetados', '-', '-'),
-(10, 'empanadillas chetadas', '-', '-'),
-(11, 'huevo frito chetado', '-', '-'),
-(12, 'salchichas chetadas', '-', '-');
+(3, 'macarrones carbonara chetados', 'carbonara.jpg', 'carbonara.mp4'),
+(4, 'macarrones carne picada chetados', 'carnePicada.jpg', 'carnePicada.mp4'),
+(5, 'pizza chetada', 'pizza.jpg', 'pizza.mp4'),
+(6, 'burritos chetados', 'burritos.jpg', 'burritos.mp4'),
+(7, 'huevo revuelto chetado', 'huevoRevuelto.jpg', 'huevoRevuelto.mp4'),
+(8, 'tortilla chetada', 'tortilla.jpg', 'tortilla.mp4'),
+(9, 'nuggets chetados', 'nuggets.jpg', 'nuggets.mp4'),
+(10, 'empanadillas chetadas', 'empanadillas.jpg', 'empanadillas.mp4'),
+(11, 'huevo frito chetado', 'huevoFrito.jpg', 'huevoFrito.mp4'),
+(12, 'salchichas chetadas', 'salchichas.jpeg', 'salchichas.mp4');
 
 --
 -- Índices para tablas volcadas

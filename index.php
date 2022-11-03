@@ -34,7 +34,7 @@
             ?>
             <img src="./media/img/flecha.png" alt="flecha" id="flechaImg">
         </div>
-        <button id="buttonChetarte">Chetarse??</button>
+        <input type="button" id="buttonChetarte" value="Chetarse??">
     </div>
     <div id="resultado" class="text-center ">
         <!-- div para superponer -->
