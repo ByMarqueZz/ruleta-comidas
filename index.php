@@ -50,7 +50,6 @@
                         continue;
                     }
                     echo "<li>";
-                    echo $indice;
                     echo "<video controls src='./media/video/" . $comidas[$num][3] . "'></video>";
                     echo "</li>";
                     $indice++;
