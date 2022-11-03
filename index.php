@@ -22,7 +22,7 @@
             <?php
                 $orden = array();
                 echo "<ul class='lista' id='lista'>";
-                for($i=0;$i<200;$i++){
+                for($i=0;$i<80;$i++){
                     $num = rand(0, count($comidas)-1);
                     array_push($orden, $num);
                     echo "<li>";
@@ -40,10 +40,20 @@
         <div id="resultadoDiv">
             <?php
                 echo "<ul class='lista' id='lista2'>";
+                $indice = 0;
                 foreach($orden as $num){
+                    if ($indice < 28) {
+                        $indice++;
+                        echo "<li>";
+                        echo "<video></video>";
+                        echo "</li>";
+                        continue;
+                    }
                     echo "<li>";
+                    echo $indice;
                     echo "<video controls src='./media/video/" . $comidas[$num][3] . "'></video>";
                     echo "</li>";
+                    $indice++;
                 }
                 echo "</ul>";
             ?>

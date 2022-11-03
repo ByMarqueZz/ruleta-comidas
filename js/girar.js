@@ -18,7 +18,8 @@ function moverListaDerecha() {
         // Si no está girada se gira
         boton.disabled = true;
         boton.value= "Chetandose...";
-        var aleatorio = Math.floor(Math.random() * (20000 - 3000)) + 3000;
+        // var aleatorio = Math.floor(Math.random() * (12000 - 5000)) + 5000;
+        let aleatorio = 5000;
         lista.style.transition = "left 10s"
         lista.style.left = `${-aleatorio}px`;
         listaMostrar.style.transition = "left 10s"
