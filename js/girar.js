@@ -1,8 +1,11 @@
 function moverListaDerecha() {
+    // Se encarga de girar la lista para chetarse
+    // Obtenemos los elementos con los que trabajamos
     lista = document.getElementById("lista");
     listaMostrar = document.getElementById("lista2");
     boton = document.getElementById("buttonChetarte");
     divListaMostrar = document.getElementById("resultadoDiv");
+    // Si ya está girada se resetea
     if (parseInt(lista.style.left) < '-4000') {
         boton.value= "Chetarse??";
         divListaMostrar.style.display = "none";
@@ -12,12 +15,12 @@ function moverListaDerecha() {
         lista.style.transition = "left 0s"
         lista.style.left = "0px";
     } else {
+        // Si no está girada se gira
         boton.disabled = true;
         boton.value= "Chetandose...";
         var aleatorio = Math.floor(Math.random() * (10000 - 4000)) + 4000;
         lista.style.transition = "left 10s"
         lista.style.left = `${-aleatorio}px`;
-        // esperar 10 segundos
         listaMostrar.style.transition = "left 10s"
         listaMostrar.style.left = `${-aleatorio}px`;
         setTimeout(function() {
