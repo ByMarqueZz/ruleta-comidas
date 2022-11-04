@@ -14,10 +14,10 @@
     <script src="./js/girar.js"></script>
 </head>
 <body>
-    <div id="header" class="container-fluid text-bg-color text-center">
+    <div id="header" class="container-fluid text-center rounded">
         <h1>Comidas Chetadas Aleatorias</h1>
     </div>
-    <div id="ruletaDiv" class="text-center">
+    <div id="ruletaDiv" class="text-center rounded">
         <div id="ruletaImg">
             <?php
                 $orden = array();
@@ -57,6 +57,9 @@
                 echo "</ul>";
             ?>
         </div>
+        <!-- <div id = "footer" class = "float-start">
+            <h3>Made by Stonks and Javs</h2>
+        </div> -->
     </div>
 </body>
 </html>

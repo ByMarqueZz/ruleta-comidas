@@ -6,20 +6,22 @@
 body {
     margin: 1%;
     overflow-x: hidden;
-    background-image: url('../media/img/FondoPag.png');
+    background-image: url('../media/img/MesaFondo.webp');
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
 #header {
     border: 1px solid red;
-    background-color: #F74036;
+    background-color: #c0834f;
     box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
     margin-bottom: 10px;
     font-family: 'Lobster';
     color: white;
     text-shadow: 4px 4px 1px rgb(0, 0, 0);
     -webkit-text-stroke: 0.8px black;
+    opacity: 85%;
+    color: #eed09d;
 }
 
 #ruletaDiv {
@@ -28,7 +30,7 @@ body {
     overflow: auto;
     overflow-x: hidden;
     border: 1px solid orange;
-    background-color: #F78D36;
+    background-color: #e8c68c;
     box-shadow: 2px 2px 2px 2px rgb(0, 0, 0);
 }
 
@@ -52,6 +54,9 @@ body {
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
+    background-color: #c0834f;
+    font-weight: bold;
+    font-variant: small-caps;
 }
 
 #resultado {
