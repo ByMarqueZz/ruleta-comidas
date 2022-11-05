@@ -11,10 +11,15 @@
         include 'php/db-connect.php';
         $comidas = obtenerComida($con);
     ?>
-    <script src="./js/girar.js"></script>
+    <script src='./js/girar.js'></script>
 </head>
-<body>
+<body id='body'>
     <div id="header" class="container-fluid text-center rounded">
+        <div id='temas'>
+            <button id='fondoVerde'></button>
+            <button id='fondoRojo'></button>
+            <button id='fondoNaranja'></button>
+        </div>
         <h1>Comidas Chetadas Aleatorias</h1>
     </div>
     <div id="ruletaDiv" class="text-center rounded">
@@ -26,7 +31,7 @@
                     $num = rand(0, count($comidas)-1);
                     array_push($orden, $num);
                     echo "<li>";
-                    echo "<img src='./media/img/" . $comidas[$num][2] . "' alt='comida' class='imagenes'>";
+                    echo "<img src='./media/img/" . $comidas[$num][2] . "' alt='comida' class='imagenes' id='".$i."'>";
                     echo "<p class='nombreComida'>" . $comidas[$num][1] . "</p>";
                     echo "</li>";
                 }
@@ -61,5 +66,6 @@
             <h3>Made by Stonks and Javs</h2>
         </div> -->
     </div>
+    
 </body>
 </html>
