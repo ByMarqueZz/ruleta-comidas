@@ -46,7 +46,6 @@ function pintarVideos(order, comidas) {
             continue;
         }
         li = document.createElement('li');
-        // enlace = document.createElement('a');
         li.innerHTML = '<a href="./media/video/' + comidas[order[i]][3] + '" target = "_blank"><img src="./media/img/video_paused.png" alt="comida" class="imagenes"></a>';
         li.appendChild(video);
         lista.appendChild(li);
