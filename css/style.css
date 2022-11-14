@@ -104,6 +104,7 @@ body {
     display: flex;
     list-style: none;
     padding: 0px;
+    margin-left: 170px;
 }
 
 #resultadoDiv ul li video{

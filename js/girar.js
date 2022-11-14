@@ -118,7 +118,6 @@ function changeGreen() {
     setCookie("fondoColor", "green", 365);
 }
 
-
 // una vez que carga la pagina
 window.onload = function() {
     // obtenemos la cookie
